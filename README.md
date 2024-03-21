@@ -1,1 +1,1 @@
-# GPT-typeahead
+# GPT Fortune teller 🔮
