@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "qteller"
+version = "0.1.0"
+description = "GPT Query Teller is a Python library that harnesses the capabilities of GPT-1 for cutting-edge query completion, offering unparalleled support for typeahead and next-word prediction functionalities."
+authors = ["Milutin Studen <studen.m98@gmail.com>"]
+license = "Apache License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
