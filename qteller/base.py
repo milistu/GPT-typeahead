@@ -6,6 +6,6 @@ class TellerBase(ABC):
         super().__init__()
 
     @abstractmethod
-    def predict(self):
+    def complete(self):
         """Method to perform query completion."""
         pass
