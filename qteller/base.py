@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import List
 
 
 class TellerBase(ABC):
@@ -6,6 +7,16 @@ class TellerBase(ABC):
         super().__init__()
 
     @abstractmethod
-    def complete(self):
+    def encode(self):
+        """Method to convert query and context to tokens."""
+        pass
+
+    @abstractmethod
+    def decode(self):
+        """Method to convert model output tokens to text."""
+        pass
+
+    @abstractmethod
+    def complete(self) -> List[str]:
         """Method to perform query completion."""
         pass
