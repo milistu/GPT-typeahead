@@ -4,12 +4,8 @@ from typing import Dict, List
 import torch
 
 
-def format_completion(compleations: List[Dict], context: str) -> List[str]:
-    compleations = [
-        clean_spaces(compleation["generated_text"][len(context) :])
-        for compleation in compleations
-    ]
-    return compleations
+def format_completion(compleations: List[Dict]) -> List[str]:
+    return [clean_spaces(compleation) for compleation in compleations]
 
 
 def clean_spaces(text):
